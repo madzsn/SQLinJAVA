@@ -12,7 +12,7 @@ public class feriadosNacionais {
         try (Connection conexao = DriverManager.getConnection("jdbc:mysql://" + host + ":3306/" + database, usuario, senha)) {
 
             String data = "2023-04-21"; 
-            String descricao = "A data remete ao dia da morte do mineiro Joaquim José da Silva Xavier, que ocorreu em 21 de abril de 1792. Ele foi um dos participantes da Inconfidência Mineira, conspiração da elite mineira contra Portugal.";
+            String descricao = "A data remete ao dia da morte do mineiro Tiradentes, que ocorreu em 21 de abril de 1792. Ele foi um dos participantes da Inconfidência Mineira, conspiração da elite mineira contra Portugal.";
 
             String sql = "INSERT INTO feriados_nacionais  (data, descricao) VALUES (?, ?)";
             PreparedStatement stmt = conexao.prepareStatement(sql);
